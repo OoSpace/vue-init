@@ -1,0 +1,60 @@
+/*这里是样式文件，用了less语言*/
+/*less语言参考网站：http://lesscss.cn*/
+
+@import "../../../common/style/config.less";
+@import "../../../common/style/mixins.less";
+
+*{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+.list-date{
+	padding:15px;
+	background:#fff;
+	font-size:14px;
+	ul{
+		width:100%;
+		li{
+			position:relative;
+			float:left;
+			width:20%;
+			margin-top:15px;
+			text-align:center;
+			color:#09BB07;
+			&.active{
+				
+			}
+			img{
+				display:block;
+				position:relative;
+				z-index:1;
+				width:90%;
+				margin:0 auto;
+			}
+			.date-text{
+				position:absolute;
+				z-index:2;
+				width:100%;
+				top:50%;
+				margin-top:-18px;
+			}
+			span{
+				display:block;
+				font-size:12px;
+				opacity: 0.6;
+			}
+			em{
+				display:block;
+				margin-top:6px;
+				font-style:normal;
+				font-size:14px;
+				@media screen and (max-width: 320px){
+					margin-top:4px;
+				}
+			}
+		}
+	}
+}
+
